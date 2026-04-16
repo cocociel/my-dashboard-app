@@ -1,7 +1,7 @@
-# Next.js + TypeScript + Tailwind CSS Starter Template
+# ダッシュボードアプリ
 
-自分用にカスタマイズした Next.js (App Router) の初期構築テンプレートです。
-開発体験（DX）を重視した設定（Prettier, Tailwind Class Sorting, コンポーネント設計）が適用済みです。
+完全個人用のダッシュボードアプリ。
+メモ、Todo、推しのスケジュール、家計簿、投資額などを一元管理する。
 
 ## 🚀 特徴
 
@@ -12,28 +12,6 @@
 - **Utility**: `clsx` + `tailwind-merge` (`cn` helper implemented)
 - **Editor**: VS Code settings included (Format on Save enabled)
 
-## 📂 ディレクトリ構成
-
-ソースコードは `src` 配下に集約し、役割ごとに分離しています。
-
-```text
-src/
-├── app/
-├── components/
-├── hooks/
-├── lib/
-│   ├── supabase/
-│   │   ├── client.ts
-│   │   ├── oshiMaster.ts
-│   │   └── server.ts
-│   ├── utils.ts
-│   └── youtube.ts
-├── types/
-│   ├── oshiMaster.ts
-│   └── supabase.ts
-└── middleware.ts
-```
-
 ## 🧞 Commands
 
 ```Bash
@@ -42,9 +20,7 @@ npm run build    # 本番ビルド
 npm run start    # ビルド後の本番起動
 npm run lint     # リントチェック
 npm run format   # Prettierによる手動フォーマット実行
-npm run supabase:gen   # アプリ固有DBおよびマスタDB型定義作成
-npm run supabase:gen:app   # アプリ固有DB型定義作成
-npm run supabase:gen:master   # マスタDB型定義作成
+npm run supabase:gen   # Supabaseの型定義作成
 ```
 
 ## 🛠️ 開発のポイント・ルール（Memo）
@@ -206,17 +182,6 @@ export default async function Home() {
 ```
 
 画面に [ { "id": 1, "title": "Connection Test OK" } ] と表示されれば成功です。 確認後は元のコードに戻してください。
-
----
-
-### 推し活マスタDB (Multi-Database Support)
-
-このプロジェクトは、アプリ固有のデータを管理する **「App DB」** と、複数のアプリで共通利用する推し情報（メンバー情報、動画データなど）を管理する **「Oshi Master DB」** の2つのデータベースに接続可能な構成になっています。
-
-**コンセプト:**
-
-- **App DB**: ユーザー情報、いいね履歴、コメントなど（書き込みメイン）
-- **Oshi Master DB**: 全アプリ共通の推しデータ（読み取り専用マスタ）
 
 ---
 
