@@ -5,6 +5,13 @@ interface GlassCardProps {
   className?: string;
 }
 
+/**
+ * ガラスカード
+ * 各機能を本コンポーネントで囲むことで、統一感のあるデザインにすることができる
+ * @param children 中身
+ * @param className 追加するクラス
+ * @returns GlassCard
+ */
 export default function GlassCard({
   children,
   className = '',
