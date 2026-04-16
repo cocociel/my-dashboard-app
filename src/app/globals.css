@@ -5,5 +5,8 @@
 @layer base {
   body {
     @apply bg-blue-950 text-blue-50;
+    font-family:
+      'Source Han Code JP', '游ゴシック体', 'Yu Gothic', '游ゴシック Medium',
+      'Yu Gothic Medium', '游ゴシック', 'Yu Gothic', sans-serif;
   }
 }
