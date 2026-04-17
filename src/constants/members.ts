@@ -1,0 +1,42 @@
+import { ColorMapKey } from './colors';
+
+export const STPR_MEMBERS: {
+  name: string;
+  colorKey: ColorMapKey;
+}[] = [
+  { name: 'ななもり。', colorKey: 'purple' },
+  { name: 'ジェル', colorKey: 'orange' },
+  { name: 'さとみ', colorKey: 'pink' },
+  { name: 'ころん', colorKey: 'cyan' },
+  { name: '莉犬', colorKey: 'red' },
+  { name: 'るぅと', colorKey: 'yellow' },
+  { name: 'ばあう', colorKey: 'red' },
+  { name: 'てるとくん', colorKey: 'pink' },
+  { name: 'しゆん', colorKey: 'emerald' },
+  { name: 'タケヤキ翔', colorKey: 'white' },
+  { name: 'あっきぃ', colorKey: 'yellow' },
+  { name: 'まぜ太', colorKey: 'purple' },
+  { name: 'ぷりっつ', colorKey: 'lime' },
+  { name: 'ちぐさくん', colorKey: 'cyan' },
+  { name: 'あっと', colorKey: 'red' },
+  { name: 'けちゃ', colorKey: 'pink' },
+  { name: '心音', colorKey: 'purple' },
+  { name: 'ロゼ', colorKey: 'red' },
+  { name: 'Lapis', colorKey: 'cyan' },
+  { name: 'メルト・ダ・テンシ', colorKey: 'white' },
+  { name: 'みかさくん', colorKey: 'pink' },
+  { name: '明雷らいと', colorKey: 'yellow' },
+  { name: 'やなと', colorKey: 'yellow' },
+  { name: 'だいきり', colorKey: 'yellow' },
+  { name: 'にしき', colorKey: 'white' },
+  { name: 'らお', colorKey: 'red' },
+  { name: 'ゆたくん', colorKey: 'cyan' },
+  { name: 'たちばな', colorKey: 'blue' },
+  { name: 'おさでい', colorKey: 'cyan' },
+  { name: 'はりま', colorKey: 'orange' },
+  { name: 'まひろまる。', colorKey: 'yellow' },
+  { name: 'そあらくん', colorKey: 'cyan' },
+  { name: 'パルオ', colorKey: 'pink' },
+  { name: 'ものくろ', colorKey: 'white' },
+  { name: 'つきしろやしろ。', colorKey: 'purple' },
+];
