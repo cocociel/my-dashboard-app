@@ -20,12 +20,16 @@ export default function ShootingStar() {
 
   useEffect(() => {
     // 初期ロード時にランダムな星を生成する
-    const generatedStars = Array.from({ length: 5 }).map((_, i) => ({
+    const generatedStars = Array.from({ length: 35 }).map((_, i) => ({
       id: i,
-      top: Math.random() * 300,
-      right: Math.random() * 400,
-      delay: Math.random() * 5,
-      duration: Math.random() * 3 + 2,
+      // 常に画面の上枠外〜上端付近からスタート (-100px 〜 100px)
+      top: Math.random() * 200 - 100,
+      // 理論上画面幅どこでも流れ星が流れるランダム位置（横1920px+縦1080px=3000px）
+      right: Math.random() * 3200 - 1200,
+      // 長い時間流れるので、発生タイミングも長めに散らす (-12秒 〜 12秒)
+      delay: Math.random() * 24 - 12,
+      // かなりゆっくり (16秒 〜 24秒)
+      duration: Math.random() * 8 + 16,
     }));
 
     setStars(generatedStars);
