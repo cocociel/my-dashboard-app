@@ -15,6 +15,9 @@ const config: Config = {
         meteor: {
           '0%': {
             transform: 'rotate(-45deg) translateX(0)',
+            opacity: '0',
+          },
+          '5%': {
             opacity: '1',
           },
           '70%': {
