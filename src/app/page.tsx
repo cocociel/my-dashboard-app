@@ -1,4 +1,5 @@
 import AppInfoCard from '@/components/features/AppInfoCard';
+import MtorScheCard from '@/components/features/MtorScheCard';
 import ShootingStar from '@/components/ui/ShootingStar';
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
 
       {/* ここに各機能のガラスカードを追加していく */}
       <AppInfoCard />
+      <MtorScheCard />
     </div>
   );
 }
