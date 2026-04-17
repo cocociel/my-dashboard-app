@@ -7,7 +7,26 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        meteor: 'meteor 16s linear infinite',
+      },
+      keyframes: {
+        meteor: {
+          '0%': {
+            transform: 'rotate(-45deg) translateX(0)',
+            opacity: '1',
+          },
+          '70%': {
+            opacity: '1',
+          },
+          '100%': {
+            transform: 'rotate(-45deg) translateX(-1500px)',
+            opacity: '0',
+          },
+        },
+      },
+    },
   },
   plugins: [],
 };
