@@ -10,3 +10,10 @@
       'Yu Gothic Medium', '游ゴシック', 'Yu Gothic', sans-serif;
   }
 }
+
+/* Chrome, Safari, Edgeのnumber入力欄の矢印を非表示にする */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
